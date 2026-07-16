@@ -1,12 +1,8 @@
-# musicpad
-
-![musicpad](imgur.com image replace me!)
+# musicpaз
 
 *A short description of the keyboard/project*
 
 * Keyboard Maintainer: [shkolar007](https://github.com/shkolar007)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
 
 Make example for this keyboard (after setting up your build environment):
 
