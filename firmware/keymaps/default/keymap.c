@@ -9,13 +9,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MUTE            // SW5 (Encoder Click)
     )
 };
-
-// Data-driven encoder mapping (No config.h / rules.mk required)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) } // Rotary Knob: Vol Down / Vol Up
+    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) } 
 };
-
-// Optional OLED display function
 #ifdef OLED_ENABLE
 bool oled_task_user(void) {
     oled_write_P(PSTR("XIAO Macropad\n"), false);
