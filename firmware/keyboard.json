@@ -1,0 +1,59 @@
+{
+    "keyboard_name": "musicpad",
+    "manufacturer": "Isa",
+    "url": "https://github.com/qmk/qmk_firmware",
+    "maintainer": "Isa",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x0001",
+        "device_version": "0.0.1"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "matrix_pins": {
+        "direct": [
+            ["GP26", "GP27", "GP28", "GP29", "GP6", "GP1"]
+        ]
+    },
+    "encoder": {
+        "enabled": true,
+        "rotary": [
+            { "pin_a": "GP7", "pin_b": "GP0", "resolution": 4 }
+        ]
+    },
+    "ws2812": {
+        "pin": "GP2",
+        "driver": "vendor"
+    },
+    "rgblight": {
+        "led_count": 2,
+        "driver": "ws2812",
+        "max_brightness": 200,
+        "animations": {
+            "static_light": true,
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true
+        }
+    },
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": false,
+        "nkro": true,
+        "rgblight": true,
+        "encoder": true
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0, "label": "SW1" },
+                { "matrix": [0, 1], "x": 1, "y": 0, "label": "SW2" },
+                { "matrix": [0, 2], "x": 2, "y": 0, "label": "SW3" },
+                { "matrix": [0, 3], "x": 3, "y": 0, "label": "SW4" },
+                { "matrix": [0, 4], "x": 4, "y": 0, "label": "SW5" },
+                { "matrix": [0, 5], "x": 5, "y": 0, "label": "ENC_PUSH" }
+            ]
+        }
+    }
+}
