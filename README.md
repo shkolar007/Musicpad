@@ -10,7 +10,6 @@ I built this macropad for [Hackpad](https://hackpad.hackclub.com/)—an awesome 
 - EC11 rottary encoder
 - 128x32 OLED Display
 - cool underglow
-- claude code logo in the case
 
 ## CAD
 To assembl it you need 
